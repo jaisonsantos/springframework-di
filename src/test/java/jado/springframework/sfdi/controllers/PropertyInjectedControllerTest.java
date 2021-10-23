@@ -1,6 +1,6 @@
 package jado.springframework.sfdi.controllers;
 
-import jado.springframework.sfdi.services.GreetingServiceImpl;
+import jado.springframework.sfdi.services.PropertyInjectedGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +11,7 @@ class PropertyInjectedControllerTest {
     @BeforeEach
     void setUp() {
         controller = new PropertyInjectedController();
-        controller.greetingService = new GreetingServiceImpl();
+        controller.greetingService = new PropertyInjectedGreetingService();
     }
 
     @Test

@@ -3,9 +3,10 @@ package jado.springframework.sfdi.services;
 import org.springframework.stereotype.Service;
 
 @Service
-public class GreetingServiceImpl implements GreetingService {
+public class SetterInjectedGreetingService implements GreetingService {
+    
     @Override
     public String sayGreeting() {
-        return "HelloWorld";
+        return "Hello World - Setter";
     }
 }
