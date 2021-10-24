@@ -36,6 +36,11 @@ public class SfDiApplication {
         ConstructorInjectedController constructorInjectedController = (ConstructorInjectedController) ctx.getBean("constructorInjectedController");
         System.out.println(constructorInjectedController.getGreeting());
         System.out.println("********************************************");
+
+
+        System.out.println("--------------- PetService ----------------");
+        PetController petController = (PetController) ctx.getBean("petController");
+        System.out.println(petController.whichPetIsTheBest());
     }
 
 }
